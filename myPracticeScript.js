@@ -166,3 +166,68 @@ console.log(numbers);
 
 console.log(numbers.includes(20));
 
+// lets start to learn filter() method.
+
+let numbers = [1,2,3,4,5]
+
+let result = [];
+
+for(let i=0;i < numbers.length;i++){
+    if(numbers[i] % 2 === 0){result.push(numbers[i])}
+}
+console.log(result);
+// modern way to use filter getting even numbers
+let numbers = [1,2,3,4,5];
+let result = numbers.filter(num => num % 2 === 0);
+console.log(result);
+
+let numbers = [12,7,30,5,18];
+let result = numbers.filter(num => num % 2 !== 0);
+console.log(result);
+
+let numbers = [12,7,30,5,18];
+let result = numbers.filter(num => num > 10);
+console.log(result);
+console.log(numbers);
+
+let numbers = [12,7,30,5,18];
+let result = numbers.filter(num => num > 10);
+console.log(result);
+
+let numbers = [12,7,30,5,18];
+let result = [];
+for(let i=0; i<numbers.length;i++){
+    if( numbers[i] > 10){
+        result.push(numbers[i])}
+        
+    }
+    console.log(result);
+
+let numbers = [12,7,30,5,18];
+let result = numbers.filter(num => num % 2 !== 0);
+console.log(result);
+
+
+let numbers = [12,7,30,5,18];
+let result = [];
+for(i=0;i<numbers.length;i++){
+    if(numbers[i] % 2 !== 0){
+        result.push(numbers[i])
+    }
+}
+console.log(result);
+
+
+let numbers = [2,4,6,8,10];
+let result = numbers.map(num => num ** 2);
+console.log(result)
+
+
+let numbers = [2,4,6,8,10];
+let result = [];
+for(i=0;i<numbers.length;i++){
+    if(numbers[i] * numbers[i]){
+        result.push(numbers[i])
+    }
+}
+console.log(result);
